@@ -17,6 +17,7 @@ feature "Create a new location" do
   scenario "with all required fields", :js => true do
     fill_in "location_name", with: "new samaritan house location"
     fill_in "description", with: "new description"
+    fill_in "short_desc", with: "new short description"
     fill_in "street", with: "1486 Huntington Avenue, Suite 100"
     fill_in "city", with: "Redwood City"
     fill_in "state", with: "XX"
@@ -24,6 +25,7 @@ feature "Create a new location" do
     click_button "Create new location for Samaritan House"
     find_field('location_name').value.should eq "new samaritan house location"
     find_field('description').value.should eq "new description"
+    find_field('short_desc').value.should eq "new short description"
     find_field('street').value.should eq "1486 Huntington Avenue, Suite 100"
     find_field('city').value.should eq "Redwood City"
     find_field('state').value.should eq "XX"
@@ -33,6 +35,7 @@ feature "Create a new location" do
 
   scenario "with empty description" do
     fill_in "location_name", with: "new samaritan house location"
+    fill_in "short_desc", with: "new short description"
     fill_in "street", with: "1486 Huntington Avenue, Suite 100"
     fill_in "city", with: "Redwood City"
     fill_in "state", with: "XX"
@@ -43,6 +46,7 @@ feature "Create a new location" do
 
   scenario "with empty name" do
     fill_in "description", with: "new description"
+    fill_in "short_desc", with: "new short description"
     fill_in "street", with: "modularity"
     fill_in "city", with: "utopia"
     fill_in "state", with: "XX"
@@ -51,9 +55,21 @@ feature "Create a new location" do
     expect(page).to have_content "Location name can't be blank!"
   end
 
+  scenario "with empty short description" do
+    fill_in "location_name", with: "new samaritan house location"
+    fill_in "description", with: "new description"
+    fill_in "street", with: "modularity"
+    fill_in "city", with: "utopia"
+    fill_in "state", with: "XX"
+    fill_in "zip", with: "12345"
+    click_button "Create new location for Samaritan House"
+    expect(page).to have_content "Please enter a short description"
+  end
+
   scenario "with no address" do
     fill_in "location_name", with: "new samaritan house location"
     fill_in "description", with: "new description"
+    fill_in "short_desc", with: "new short description"
     click_button "Create new location for Samaritan House"
     expect(page).to have_content "Please enter at least one type of address"
   end
@@ -283,14 +299,14 @@ describe "creating a new location as user with generic email" do
   context "after creating the location", js: true do
     it "sets the current user as an admin for the new location" do
       user = create(:second_user)
-      set_user_as_admin(user.email, "Little House")
+      set_user_as_admin(user.email, "Schaberg Branch")
       sign_in(user.email, user.password)
       click_link "Add a new location"
       fill_in_all_required_fields
-      click_button "Create new location for Peninsula Volunteers"
+      click_button "Create new location for Redwood City Public Library"
       find_field('admins[]').value.should eq user.email
       delete_location
-      visit("/little-house")
+      visit("/schaberg-branch")
       delete_all_admins
     end
   end

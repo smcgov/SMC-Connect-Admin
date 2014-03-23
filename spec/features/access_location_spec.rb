@@ -33,19 +33,19 @@ feature "Accessing a specific location" do
 
   scenario "when user is location admin but has non-generic email", js: true do
     new_admin = create(:user)
-    set_user_as_admin(new_admin.email, "Little House")
+    set_user_as_admin(new_admin.email, "Schaberg Branch")
     login_user(new_admin)
-    visit("/little-house")
+    visit("/schaberg-branch")
     expect(page).to have_content "Sorry, you don't have access to that page"
     click_link "Sign out"
     sign_in(@admin.email, @admin.password)
-    visit("/little-house")
+    visit("/schaberg-branch")
     delete_all_admins
   end
 
   scenario "when user is master admin" do
     login_admin
-    visit("/little-house")
+    visit("/schaberg-branch")
     expect(page).to_not have_content "Sorry, you don't have access to that page"
   end
 
