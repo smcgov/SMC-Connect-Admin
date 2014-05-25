@@ -38,7 +38,7 @@ feature "Update a location's admins" do
   scenario "with 2 admins but one is empty", :js => true do
     visit_test_location
     click_link "Add an admin"
-    fill_in "admin_emails[]", with: "moncef@samaritanhouse.com"
+    fill_in "admin_emails[]", with: "moncef@samaritanhousesanmateo.org"
     click_link "Add an admin"
     click_button "Save changes"
     visit_test_location
@@ -51,17 +51,17 @@ feature "Update a location's admins" do
   scenario "with valid admin", :js => true do
     visit_test_location
     click_link "Add an admin"
-    fill_in "admin_emails[]", with: "moncef@samaritanhouse.com"
+    fill_in "admin_emails[]", with: "moncef@samaritanhousesanmateo.org"
     click_button "Save changes"
     visit_test_location
-    find_field('admin_emails[]').value.should eq "moncef@samaritanhouse.com"
+    find_field('admin_emails[]').value.should eq "moncef@samaritanhousesanmateo.org"
     delete_all_admins
   end
 
   scenario "with invalid admin", :js => true do
     visit_test_location
     click_link "Add an admin"
-    fill_in "admin_emails[]", with: "moncefsamaritanhouse.com"
+    fill_in "admin_emails[]", with: "moncefsamaritanhousesanmateo.org"
     click_button "Save changes"
     expect(page).to have_content "Please enter a valid admin email address"
   end

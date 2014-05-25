@@ -9,7 +9,7 @@ feature "Create a new location" do
 
   describe "when adding a new location" do
     it "should prepopulate the website" do
-      find_field('urls[]').value.should eq "http://www.samaritanhouse.com"
+      find_field('urls[]').value.should eq "http://www.samaritanhousesanmateo.org"
     end
   end
 
@@ -298,14 +298,14 @@ describe "creating a new location as user with generic email" do
   context "after creating the location", js: true do
     it "sets the current user as an admin for the new location" do
       user = create(:second_user)
-      set_user_as_admin(user.email, "Little House")
+      set_user_as_admin(user.email, "Pescadero Grown")
       login_user(user)
       visit("/locations/new")
       fill_in_all_required_fields
-      click_button "Create new location for Peninsula Volunteers"
+      click_button "Create new location for Pescadero Grown"
       find_field('admin_emails[]').value.should eq user.email
       delete_location
-      visit("/little-house")
+      visit("/pescadero-grown")
       delete_all_admins
     end
   end

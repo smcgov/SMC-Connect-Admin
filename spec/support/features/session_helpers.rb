@@ -247,6 +247,7 @@ module Features
     def fill_in_all_required_fields
       fill_in "location_name", with: "new samaritan house location"
       fill_in "description", with: "new description"
+      fill_in "short_desc", with: "new short description"
       fill_in "street", with: "modularity"
       fill_in "city", with: "utopia"
       fill_in "state", with: "XX"

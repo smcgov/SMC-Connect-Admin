@@ -8,7 +8,7 @@ feature "Accessing /locations" do
     visit("/locations")
     expect(page).to have_content 'Below you should see a list of locations'
     expect(page).to_not have_content 'As an admin'
-    only_admin_locations = all('a').select { |a| a.text.include?("Corps") }
+    only_admin_locations = all('a').select { |a| a.text.include?("Market") }
     expect(only_admin_locations).to be_empty
   end
 
@@ -17,7 +17,7 @@ feature "Accessing /locations" do
     login_user(valid_user)
     visit("/locations")
     expect(page).to have_content 'As an admin'
-    only_admin_locations = all('a').select { |a| a.text.include?("Corps") }
+    only_admin_locations = all('a').select { |a| a.text.include?("Market") }
     expect(only_admin_locations).to_not be_empty
   end
 
@@ -30,12 +30,12 @@ feature "Accessing /locations" do
   context "when signed in as location admin", js: true do
     it "should display the add new location button" do
       new_admin = create(:second_user)
-      set_user_as_admin(new_admin.email, "San Mateo Free Medical Clinic")
+      set_user_as_admin(new_admin.email, "El Camino Branch")
       login_user(new_admin)
-      visit("/san-mateo-free-medical-clinic")
+      visit("/el-camino-branch")
       visit("/locations")
       expect(page).to have_link "Add a new location"
-      visit("/san-mateo-free-medical-clinic")
+      visit("/el-camino-branch")
       delete_all_admins
     end
   end

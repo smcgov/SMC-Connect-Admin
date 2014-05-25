@@ -24,22 +24,22 @@ feature "Accessing a specific location" do
 
   scenario "when user is location admin", js: true do
     new_admin = create(:second_user)
-    set_user_as_admin(new_admin.email, "San Mateo Free Medical Clinic")
+    set_user_as_admin(new_admin.email, "El Camino Branch")
     login_user(new_admin)
-    visit("/san-mateo-free-medical-clinic")
+    visit("/el-camino-branch")
     expect(page).to_not have_content "Sorry, you don't have access to that page"
     delete_all_admins
   end
 
   scenario "when user is location admin but has non-generic email", js: true do
     new_admin = create(:user)
-    set_user_as_admin(new_admin.email, "Little House")
+    set_user_as_admin(new_admin.email, "Page Mill Branch")
     sign_in(new_admin.email, new_admin.password)
-    visit("/little-house")
+    visit("/page-mill-branch")
     expect(page).to have_content "Sorry, you don't have access to that page"
     click_link "Sign out"
     sign_in(@admin.email, @admin.password)
-    visit("/little-house")
+    visit("/page-mill-branch")
     delete_all_admins
     click_link "Sign out"
   end
