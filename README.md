@@ -6,7 +6,7 @@ If someone signs up with a County email address that ends in @smcgov.org or @co.
 
 ## Stack Overview
 
-* Ruby version 2.0.0
+* Ruby version 2.1.1
 * Rails version 3.2.17
 * MongoDB with the Mongoid ORM
 * Testing Frameworks: RSpec, Factory Girl, Capybara
@@ -16,7 +16,7 @@ Please note that the instructions below have only been tested on OS X. If you ar
 
 ###Prerequisites
 
-#### Git, Ruby 2.0.0+, Rails 3.2.17+ (+ Homebrew on OS X)
+#### Git, Ruby 2.1+ (+ Homebrew on OS X)
 **OS X**: [Set up a dev environment on OS X with Homebrew, Git, RVM, Ruby, and Rails](http://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/)
 
 **Windows**: Try [RailsInstaller](http://railsinstaller.org), along with some of these [tutorials](https://www.google.com/search?q=install+rails+on+windows) if you get stuck.
@@ -34,7 +34,7 @@ Follow the Homebrew instructions for configuring MongoDB and starting it automat
 
     mongod
 
-MongoDB installation instructions using MacPorts are available on the [wiki](https://github.com/codeforamerica/ohana-api-admin/wiki/Installation).
+[MongoDB installation instructions using MacPorts](https://github.com/codeforamerica/ohana-api-admin/wiki/Installing-MongoDB-with-MacPorts-on-OS-X) are available on the Wiki.
 
 **Other**
 
@@ -42,7 +42,7 @@ See the Downloads page on mongodb.org for steps to install on other systems: [ht
 
 ### Clone the app on your local machine.
 
-From the Terminal, navigate to the directory into which you'd like to create a copy of the Ohana API Admin source code. For instance, on OS X `cd ~` will place you in your home directory. Next download this repository into your working directory with:
+From the Terminal, navigate to the directory into which you'd like to create a copy of the SMC-Connect Admin source code. Next download this repository into your working directory with:
 
     git clone https://github.com/smcgov/SMC-Connect-Admin.git smc-connect-admin
     cd smc-connect-admin
@@ -51,30 +51,21 @@ From the Terminal, navigate to the directory into which you'd like to create a c
 
     script/bootstrap
 
-If you get a `permission denied` message, set the correct permissions:
 
-    chmod -R 755 script
+### Set up the environment variables
+Inside the `config` folder, you will find `application.example.yml`.
+Rename it to `application.yml` and double check that it is in your
+`.gitignore` file (it should be by default).
 
-then run `script/bootstrap` again.
+By default, the app is configured to point to the
+[demo API](http://ohana-api-demo.herokuapp.com/api).
+To point to your own instance of Ohana API, change the value of
+`OHANA_API_ENDPOINT` in your `application.yml`.
 
-### Install the Ohana API and run it locally
-In order to be able to test the admin interface, you need data. Since this app gets its data from the Ohana API, you need to [install the Ohana API](https://github.com/smcgov/ohana-api-smc#installation) first, which comes with a sample dataset.
-
-### Configure your local SMC-Connect Admin to point to your local Ohana API
-In your local SMC-Connect Admin, go to `config/application.yml` and add an entry like this to define your API endpoint:
-
-    OHANA_API_ENDPOINT: http://localhost:8080/api
-
-### Allow the Admin app to write to the Ohana API
-The Ohana API currently only allows one app to write to the API. It determines if an HTTP request is authorized to make a PUT, POST, or DELETE request based on the `X-Api-Token` header that it sends. Normally, you would obtain an API Token by signing up on the Ohana API site and registering an application. For testing purposes, you can skip that step and just define your own token (a series of alphanumeric characters, such as `as56hsd789sdf`).
-
-In your local Ohana API, make sure `config/application.yml` includes an entry like this that defines the token used by the admin app:
-
-    ADMIN_APP_TOKEN: your_token
-
-In the Admin app, go to `config/application.yml` and add an entry like this with the same token as above:
-
-    OHANA_API_TOKEN: same_token_as_above
+If you made changes to `config/application.yml` in either the Admin
+app or the API app, or if you're pointing the Admin app to an API app
+that already has `ADMIN_APP_TOKEN` configured, make sure that the value of
+`ADMIN_APP_TOKEN` in the API matches `OHANA_API_TOKEN` in the Admin app.
 
 ### Run the admin app
 Start the app locally:
@@ -139,6 +130,15 @@ We use the [GitHub issue tracker](https://github.com/smcgov/smc-connect-admin/is
 [fork]: http://help.github.com/fork-a-repo/
 [branch]: http://learn.github.com/p/branching.html
 [pr]: http://help.github.com/send-pull-requests/
+
+## Supported Ruby Version
+This library aims to support and is tested against Ruby version 2.1.1.
+
+If something doesn't work on this version, it should be considered a bug.
+
+This library may inadvertently work (or seem to work) on other Ruby implementations, however support will only be provided for the version above.
+
+If you would like this library to support another Ruby version, you may volunteer to be a maintainer. Being a maintainer entails making sure all tests run and pass on that implementation. When something breaks on your implementation, you will be personally responsible for providing patches in a timely fashion. If critical issues for a particular implementation exist at the time of a major release, support for that Ruby version may be dropped.
 
 ## Copyright
 Copyright (c) 2013 Code for America. See [LICENSE](https://github.com/codeforamerica/ohana-api-admin/blob/master/LICENSE.md) for details.
