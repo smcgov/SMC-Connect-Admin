@@ -1,0 +1,10 @@
+language: ruby
+rvm:
+- 2.1.1
+services:
+- mongodb
+deploy:
+  provider: heroku
+  app: smc-connect-admin-staging
+  api_key:
+    secure: dvlTNFw6+zjRXB3hQP1SPnoDbUIGjqVwTIGhVW4oTgaHdPpHYDFMoyr2A722ygXEOWtsSyzQFsHRmiDnGr6w490lHqFc4i0MGJ0DZ8VTT9HiByCYSkDu2G7jxYX4dgL+AlfpRaRANrqNnn0jcqKYF+Yd1S0ip0kiy3e2qoLydWk=
