@@ -3,9 +3,9 @@ ENV["RAILS_ENV"] ||= 'test'
 require File.expand_path("../../config/environment", __FILE__)
 require 'rspec/rails'
 
-#require 'capybara/poltergeist'
-Capybara.javascript_driver = :selenium
-#Capybara.ignore_hidden_elements = true
+require 'capybara/poltergeist'
+Capybara.javascript_driver = :poltergeist
+Capybara.default_wait_time = 30
 #require 'email_spec'
 
 # Requires supporting ruby files with custom matchers and macros, etc,

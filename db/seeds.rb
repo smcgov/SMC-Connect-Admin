@@ -10,7 +10,7 @@
 
 puts '===> Setting up first test user...'
 user = User.create! :name => 'User with custom domain name',
-                    :email => 'ohana@samaritanhouse.com',
+                    :email => 'ohana@samaritanhousesanmateo.org',
                     :password => 'ohanatest',
                     :password_confirmation => 'ohanatest'
 user.confirm!

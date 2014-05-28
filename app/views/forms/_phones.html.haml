@@ -21,11 +21,13 @@
         %br
         = "Department"
         = text_field_tag "department[]", phone.key?(:department) ? phone.department : "", maxlength: 50, class: "span4"
+        = hidden_field_tag "phone_ids[]", phone.id, id: "phone_id_#{phone.id}"
+        = hidden_field_tag "destroy_phones[]", "", id: "destroy"
         %br
-        = link_to "Delete this number permanently", '#', class: "btn btn-danger remove_phone"
+        = link_to "Delete this number permanently", '#', class: "btn btn-danger delete_association"
         = link_to "undo", '#', class: "undo", :style => "display: none;"
         = hidden_field_tag "hours[]", phone.key?(:hours) ? phone.hours : ""
 
   - fields = render "forms/single_phone"
   %p
-    = link_to_function "Add a phone number", ("add_fields(5, this, \"#{escape_javascript(fields)}\")"), class: "btn btn-primary add_phone"
+    = link_to_function "Add a phone number", ("add_fields(4, this, \"#{escape_javascript(fields)}\")"), class: "btn btn-primary add_phone"
