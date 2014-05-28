@@ -28,7 +28,7 @@ feature "Accessing a specific location" do
     login_user(new_admin)
     visit("/el-camino-branch")
     expect(page).to_not have_content "Sorry, you don't have access to that page"
-    delete_all_admins
+    delete_admin
   end
 
   scenario "when user is location admin but has non-generic email", js: true do
@@ -40,7 +40,7 @@ feature "Accessing a specific location" do
     click_link "Sign out"
     sign_in(@admin.email, @admin.password)
     visit("/page-mill-branch")
-    delete_all_admins
+    delete_admin
     click_link "Sign out"
   end
 

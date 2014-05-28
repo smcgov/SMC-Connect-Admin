@@ -45,7 +45,7 @@ feature "Update a location's admins" do
     total_admins = page.
       all(:xpath, "//input[@type='text' and @name='admin_emails[]']")
     total_admins.length.should eq 1
-    delete_all_admins
+    delete_admin
   end
 
   scenario "with valid admin", :js => true do
@@ -55,7 +55,7 @@ feature "Update a location's admins" do
     click_button "Save changes"
     visit_test_location
     find_field('admin_emails[]').value.should eq "moncef@samaritanhousesanmateo.org"
-    delete_all_admins
+    delete_admin
   end
 
   scenario "with invalid admin", :js => true do

@@ -36,7 +36,7 @@ feature "Accessing /locations" do
       visit("/locations")
       expect(page).to have_link "Add a new location"
       visit("/el-camino-branch")
-      delete_all_admins
+      delete_admin
     end
   end
 end

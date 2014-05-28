@@ -15,7 +15,7 @@ feature "Update a location's websites" do
     visit_location_with_no_phone
     add_two_urls
     visit_location_with_no_phone
-    expect(page).to have_link "Delete this website permanently"
+    expect(find_field('urls[]', match: :first).value).to eq "http://ruby.com"
     delete_all_urls
     visit_location_with_no_phone
     page.should have_no_selector(
@@ -46,7 +46,7 @@ feature "Update a location's websites" do
     visit_test_location
     find_field('urls[]').value.should eq "http://codeforamerica.org"
   end
-  
+
   scenario "when editing a location that already has a website" do
     visit_test_location
     page.should have_selector(

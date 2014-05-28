@@ -25,7 +25,7 @@ describe "ability to add an admin to a location" do
       login_user(new_admin)
       visit("/pacifica")
       expect(page).to have_content ("Add an admin")
-      delete_all_admins
+      delete_admin
     end
   end
 end

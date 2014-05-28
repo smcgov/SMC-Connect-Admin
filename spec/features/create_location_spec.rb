@@ -306,7 +306,7 @@ describe "creating a new location as user with generic email" do
       find_field('admin_emails[]').value.should eq user.email
       delete_location
       visit("/pescadero-grown")
-      delete_all_admins
+      delete_admin
     end
   end
 end

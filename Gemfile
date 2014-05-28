@@ -35,9 +35,7 @@ group :test do
   gem 'email_spec'
   gem 'mongoid-rspec'
   gem "capybara"
-  #gem "capybara-webkit"
-  #gem 'poltergeist'
-  gem 'selenium-webdriver'
+  gem 'poltergeist'
 end
 
 gem "ohanakapa", "~> 1.0"

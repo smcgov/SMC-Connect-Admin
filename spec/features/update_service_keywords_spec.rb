@@ -45,7 +45,7 @@ feature "Update a service's keywords" do
     total_keywords = page.
       all(:xpath, "//input[@type='text' and @name='keywords[]']")
     total_keywords.length.should eq 1
-    delete_all_keywords
+    delete_keyword
   end
 
   scenario "with valid keyword", :js => true do
@@ -55,6 +55,6 @@ feature "Update a service's keywords" do
     click_button "Save changes"
     visit_test_location
     find_field('keywords[]').value.should eq "Food Pantry"
-    delete_all_keywords
+    delete_keyword
   end
 end
