@@ -1,0 +1,76 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://smc-ohana-api-test.herokuapp.com/api/locations/pacifica?api_token=SMC-Connect-Admin-Test
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - SMC-Connect-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 19:35:59 GMT
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.40
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.40
+      X-Request-Id:
+      - a59616ba-f1e6-4654-9ce2-3b4bd3ab1958
+      X-Runtime:
+      - '0.191313'
+      Content-Length:
+      - '1580'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":1686,"accessibility":["Wheelchair"],"address":{"id":1410,"street":"435
+        Edgemar Avenue","city":"Pacifica","state":"CA","zip":"94044"},"ask_for":["Intake
+        Coordinator"],"contacts":[{"id":1990,"name":"Melissa Riccio","title":"Clinical
+        Director"}],"coordinates":[-122.489409,37.6491073],"description":"Offers counseling
+        services to children, families and couples. Serves as a juvenile diversion
+        program for youth referred from the Probation Department, police departments,
+        sheriff''s office or other community agencies. Counselors are on-site at all
+        of the Laguna Salada schools and Terra Nova, Oceana and Jefferson high schools
+        to provide individual and group counseling, crisis intervention and consultation.
+        Children''s groups are held several times a year.","faxes":[{"id":1090,"number":"650
+        355-2850"}],"hours":"Monday-Wednesday, 4 pm-8 pm","kind":"Other","mail_address":{"id":1683,"attention":"Pacifica
+        Youth Service Bureau","street":"435 Edgemar Avenue","city":"Pacifica","state":"CA","zip":"94044-6879"},"name":"Pacifica","phones":[{"id":2462,"number":"650
+        355-3900"}],"short_desc":"Offers a number of counseling programs for youth
+        age 3-18, including youth with questions about their sexuality. Also offers
+        counseling for adults.","slug":"pacifica","slugs":["pacifica"],"transportation":"SAMTRANS
+        stops within 1 block.","updated_at":"2014-05-28T08:58:21.984-07:00","urls":["http://www.youthservicebureaus.org"],"url":"http://smc-ohana-api-test.herokuapp.com/api/locations/1686","services":[{"id":1690,"audience":"Children,
+        adolescents, families and individuals","eligibility":"None","fees":"Vary according
+        to income. Cash, checks and Medi-Cal accepted.","funding_sources":["County","Donations","Fees","Grants","School
+        district"],"keywords":["CHILD PROTECTION AND CARE SERVICES","Crisis/Abuse
+        Intervention/Hot","INDIVIDUAL AND FAMILY DEVELOPMENT SERVICES","Growth and
+        Adjustment","LEGAL AND CRIMINAL JUSTICE SERVICES","Diversion","Juvenile Delinquency
+        Prevent","MENTAL HEALTH SERVICES","Individual/Group Counseling","Diversion
+        Programs","Y Facilities","Youth"],"categories":[{"id":78,"depth":0,"oe_id":"106","name":"Health","parent_id":null,"slug":"health"},{"id":92,"depth":1,"oe_id":"106-04","name":"Health
+        Education","parent_id":78,"slug":"health-education"},{"id":100,"depth":2,"oe_id":"106-04-08","name":"Understand
+        Mental Health","parent_id":92,"slug":"understand-mental-health"},{"id":311,"depth":0,"oe_id":"111","name":"Legal","parent_id":null,"slug":"legal"},{"id":312,"depth":1,"oe_id":"111-01","name":"Advocacy
+        \u0026 Legal Aid","parent_id":311,"slug":"advocacy-legal-aid"}],"how_to_apply":"Apply
+        by phone.","service_areas":["San Mateo County","Daly City","El Granada","Half
+        Moon Bay","Miramar","Montara","Moss Beach","Pacifica","San Bruno"],"wait":"Varies.","updated_at":"2014-05-28T08:58:21.978-07:00"}],"organization":{"id":1343,"name":"Youth
+        Service Bureaus of the YMCA","slug":"youth-service-bureaus-of-the-ymca","slugs":["youth-service-bureaus-of-the-ymca"],"_slugs":["youth-service-bureaus-of-the-ymca"],"url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/1343","locations_url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/1343/locations"}}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 19:35:59 GMT
+recorded_with: VCR 2.9.2

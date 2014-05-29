@@ -1,6 +1,6 @@
 require "spec_helper"
 
-feature "Update a location's websites" do
+feature "Update a location's websites", :vcr do
   background do
     login_admin
   end

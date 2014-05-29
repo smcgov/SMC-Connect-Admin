@@ -1,0 +1,70 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://smc-ohana-api-test.herokuapp.com/api/locations/main-library?api_token=SMC-Connect-Admin-Test
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - SMC-Connect-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 19:18:18 GMT
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.40
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.40
+      X-Request-Id:
+      - ba7ff8bd-d353-41c9-8907-c80cb84f1a9f
+      X-Runtime:
+      - '0.042044'
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":1371,"accessibility":["Wheelchair"],"address":{"id":1111,"street":"1213
+        Newell Road","city":"Palo Alto","state":"CA","zip":"94303"},"ask_for":["Library
+        Services Manager"],"contacts":[{"id":1593,"name":"Monique le Conge","title":"Library
+        Director"},{"id":1594,"name":"Quida Charles","title":"Library Services Manager,
+        Reference"},{"id":1595,"name":"Rose Sebastian","title":"Library Services Manager,
+        Circulation"}],"coordinates":[-122.138615,37.444609],"description":"A collection
+        of 132,000 items including large print and foreign language books, magazines
+        and newspapers, DVDs, audio and video cassettes, compact discs, paperbacks,
+        talking books and telephone directories. Business as well as research reference
+        is available. Also offers consumer information, photocopiers, bus schedules
+        and the files of the Palo Alto Historical Association and Internet PCs.","emails":["pa.library@cityofpaloalto.org"],"faxes":[{"id":864,"number":"650
+        327-2033"}],"hours":"Monday, Thursday, 12-8; Tuesday, Wednesday, 10-8; Friday,
+        Saturday, 10-6; Sunday, 1-5","kind":"Libraries","languages":["Chinese (Cantonese)","French","Italian","Portuguese","Spanish","Vietnamese"],"mail_address":{"id":1368,"attention":"Main
+        Library","street":"1213 Newell Road","city":"Palo Alto","state":"CA","zip":"94303"},"name":"Main
+        Library","phones":[{"id":1849,"number":"650 329-2436"}],"slug":"main-library","slugs":["main-library"],"transportation":"VTA
+        stops within 4 blocks.","updated_at":"2014-05-24T14:07:15.187-07:00","urls":["http://www.cityofpaloalto.org/library"],"url":"http://smc-ohana-api-test.herokuapp.com/api/locations/1371","services":[{"id":1371,"eligibility":"Resident
+        of California to obtain a library card","fees":"None for use of library and
+        check out of materials. Fees are charged for copying and fines are levied
+        for overdue materials. Cash, checks, credit cards and online payments accepted.","funding_sources":["City","State"],"keywords":["EDUCATION
+        SERVICES","Library","Libraries","Public Libraries","Consumer Information","Literacy"],"how_to_apply":"Online
+        or walk in. Proof of residency in California required to receive a library
+        card.","service_areas":["Palo Alto"],"wait":"No wait.","updated_at":"2014-05-24T14:07:15.183-07:00"}],"organization":{"id":1296,"name":"Palo
+        Alto City Library","slug":"palo-alto-city-library","slugs":["palo-alto-city-library"],"_slugs":["palo-alto-city-library"],"url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/1296","locations_url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/1296/locations"}}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 19:18:18 GMT
+recorded_with: VCR 2.9.2

@@ -1,6 +1,6 @@
 require "spec_helper"
 
-feature "Update a location's kind" do
+feature "Update a location's kind", :vcr do
   background do
     login_admin
   end
