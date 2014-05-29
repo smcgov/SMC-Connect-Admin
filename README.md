@@ -1,5 +1,7 @@
 # SMC-Connect Admin
 
+[![Build Status](https://travis-ci.org/smcgov/SMC-Connect-Admin.svg?branch=master)](https://travis-ci.org/smcgov/SMC-Connect-Admin)
+
 This is an admin interface for the data that appears on the [SMC-Connect](http://www.smc-connect.org) website. It allows organization members to sign up with their organization email address, and allows them to update the locations that belong to their organization.
 
 If someone signs up with a County email address that ends in @smcgov.org or @co.sanmateo.ca.us, they will need to ask someone who has "Master Admin" access, like Edwin Chan, to add them as an admin for the locations they need to update.
