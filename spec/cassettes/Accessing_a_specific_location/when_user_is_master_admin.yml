@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://smc-ohana-api-test.herokuapp.com/api/locations/schaberg-branch?api_token=SMC-Connect-Admin-Test
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - SMC-Connect-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 19:18:36 GMT
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.40
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.40
+      X-Request-Id:
+      - b2c0d39b-92f3-4838-8411-2e4427e15ba4
+      X-Runtime:
+      - '0.037781'
+      Content-Length:
+      - '961'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":1382,"accessibility":["Ramp"],"address":{"id":1122,"street":"2140
+        Euclid Avenue.","city":"Redwood City","state":"CA","zip":"94061"},"contacts":[{"id":1612,"name":"Dave
+        Genesy","title":"Library Director"},{"id":1613,"name":"Elizabeth Meeks","title":"Branch
+        Manager"}],"coordinates":[-122.2429485,37.4664591],"description":"Provides
+        general reading materials, including large-type books, DVD''s and CDs, books
+        on CD and some Spanish language materials to children. Offers children''s
+        programs and a Summer Reading Club. Participates in the Peninsula Library
+        System.","faxes":[{"id":875,"number":"650 365-3738"}],"hours":"Tuesday-Thursday,
+        1-6, Saturday, 10-3","kind":"Libraries","mail_address":{"id":1379,"attention":"Schaberg
+        Branch","street":"2140 Euclid Avenue","city":"Redwood City","state":"CA","zip":"94061"},"name":"Schaberg
+        Branch","phones":[{"id":1895,"number":"650 780-7010"}],"short_desc":"Provides
+        general reading materials and reference services.","slug":"schaberg-branch","slugs":["schaberg-branch"],"transportation":"SAMTRANS
+        stops within 1 block.","updated_at":"2014-05-24T14:07:15.341-07:00","url":"http://smc-ohana-api-test.herokuapp.com/api/locations/1382","services":[{"id":1382,"eligibility":"Resident
+        of California to obtain a library card for borrowing materials","fees":"None.","funding_sources":["City"],"keywords":["EDUCATION
+        SERVICES","Library","Libraries","Public Libraries"],"how_to_apply":"Walk in.
+        Proof of California residency required to receive a library card.","service_areas":["San
+        Mateo County"],"wait":"No wait.","updated_at":"2014-05-24T14:07:15.337-07:00"}],"organization":{"id":1299,"name":"Redwood
+        City Public Library","slug":"redwood-city-public-library","slugs":["redwood-city-public-library"],"_slugs":["redwood-city-public-library"],"url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/1299","locations_url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/1299/locations"}}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 19:18:35 GMT
+recorded_with: VCR 2.9.2

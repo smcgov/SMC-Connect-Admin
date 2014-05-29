@@ -1,0 +1,969 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://smc-ohana-api-test.herokuapp.com/api/locations/admin-test-location?api_token=SMC-Connect-Admin-Test
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - SMC-Connect-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 19:27:59 GMT
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.40
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.40
+      X-Request-Id:
+      - 922e9908-bf16-4449-aff8-97d16779f662
+      X-Runtime:
+      - '0.077952'
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":1711,"accessibility":["Disabled Restroom"],"address":{"id":1435,"street":"bozo","city":"fairfax","state":"va","zip":"12345"},"contacts":[{"id":2051,"name":"Moncef
+        Belyamani-Belyamani","title":"Director of Development and Operations","phone":"703-555-1212","email":"moncefbelyamani@samaritanhousesanmateo.org","fax":"703-555-1234"}],"coordinates":[-73.9395687,42.8142432],"description":"This
+        is a description","emails":["moncefbelyamani@samaritanhousesanmateo.org"],"faxes":[{"id":1152,"number":"7035551212","department":"CalFresh"}],"hours":"Monday-Friday
+        10am-5pm","kind":"Test","name":"Admin Test Location","phones":[{"id":2527,"department":"CalFresh","extension":"x1223","number":"7035551212","vanity_number":"703555-ABCD"}],"short_desc":"This
+        is a short description","slug":"admin-test-location","slugs":["admin-test-location","south-san-francisco-juvenile-sexual-responsibility-program-bozo"],"transportation":"SAMTRANS
+        stops within 1/2 mile.","updated_at":"2014-05-29T12:27:53.448-07:00","urls":["http://codeforamerica.org"],"url":"http://smc-ohana-api-test.herokuapp.com/api/locations/1711","services":[{"id":1693,"description":"This
+        is a description","service_areas":["San Mateo County"],"updated_at":"2014-05-29T12:27:53.418-07:00"}],"organization":{"id":1366,"name":"Health
+        Insurance Counseling and Advocacy Program of San Mateo County (HICAP)","slug":"health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-412e63c6-6f79-433d-b406-1de3c13152b6","slugs":["health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-412e63c6-6f79-433d-b406-1de3c13152b6","admin-test-org","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-ce53a0dd-c37b-4d66-9d0c-3b6c2c78e648","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-3470c9d8-3174-4de0-9cc2-eecffa0e59ed","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-6eeee4c0-9591-4a53-bcde-3fca1ac96366","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-28032884-4d45-4ec0-a6d0-b6598b061e4e","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-1b1fcd3a-405c-4ec2-80bf-fcbad734b409","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-24655bf6-de3e-4c4a-8324-6df9583fb297","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-2b525096-47bb-4bfd-b66b-25aca8b0e50f","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-0f11ef7b-206f-4c88-8220-35b70904057e","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-21aff945-f0cd-4822-a310-b4d488e2cd4f","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-bf3681c6-2413-4af2-962e-54eda576a822","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-ebd9be23-84fa-4fb2-b64c-d8d4204572bd","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-e4138e1b-67f8-4d9d-95a6-1fa862e049aa","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-d04de352-e4d7-45b4-b61b-cf5f76724ee3","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-bd84ed9e-5453-475e-9e24-a9982f62d167","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-8d871ab7-ac9d-4ea1-9496-5bd1ccb80e5b","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-627c93a8-68c7-4743-8746-bc993ddf4eb1","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-dd044e00-446b-4f95-910f-462034a8e2c3","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-f3f5d60f-637f-45f2-9ee0-b02a807d319f","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-1aaf68ce-9bc3-4363-ac26-a4bb4e6dd528"],"_slugs":["health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-412e63c6-6f79-433d-b406-1de3c13152b6"],"url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/1366","locations_url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/1366/locations"}}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 19:27:59 GMT
+- request:
+    method: put
+    uri: http://smc-ohana-api-test.herokuapp.com/api/organizations/1366?api_token=SMC-Connect-Admin-Test&name=Health%20Insurance%20Counseling%20and%20Advocacy%20Program%20of%20San%20Mateo%20County%20(HICAP)
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - SMC-Connect-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 19:28:00 GMT
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.40
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.40
+      X-Request-Id:
+      - ed867dd2-2898-42c1-aea9-2485224700aa
+      X-Runtime:
+      - '0.043911'
+      Content-Length:
+      - '767'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":1366,"name":"Health Insurance Counseling and Advocacy Program
+        of San Mateo County (HICAP)","slug":"health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-412e63c6-6f79-433d-b406-1de3c13152b6","slugs":["health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-412e63c6-6f79-433d-b406-1de3c13152b6","admin-test-org","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-ce53a0dd-c37b-4d66-9d0c-3b6c2c78e648","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-3470c9d8-3174-4de0-9cc2-eecffa0e59ed","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-6eeee4c0-9591-4a53-bcde-3fca1ac96366","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-28032884-4d45-4ec0-a6d0-b6598b061e4e","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-1b1fcd3a-405c-4ec2-80bf-fcbad734b409","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-24655bf6-de3e-4c4a-8324-6df9583fb297","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-2b525096-47bb-4bfd-b66b-25aca8b0e50f","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-0f11ef7b-206f-4c88-8220-35b70904057e","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-21aff945-f0cd-4822-a310-b4d488e2cd4f","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-bf3681c6-2413-4af2-962e-54eda576a822","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-ebd9be23-84fa-4fb2-b64c-d8d4204572bd","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-e4138e1b-67f8-4d9d-95a6-1fa862e049aa","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-d04de352-e4d7-45b4-b61b-cf5f76724ee3","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-bd84ed9e-5453-475e-9e24-a9982f62d167","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-8d871ab7-ac9d-4ea1-9496-5bd1ccb80e5b","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-627c93a8-68c7-4743-8746-bc993ddf4eb1","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-dd044e00-446b-4f95-910f-462034a8e2c3","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-f3f5d60f-637f-45f2-9ee0-b02a807d319f","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-1aaf68ce-9bc3-4363-ac26-a4bb4e6dd528"],"_slugs":["health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-412e63c6-6f79-433d-b406-1de3c13152b6"],"url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/1366","locations_url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/1366/locations"}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 19:28:00 GMT
+- request:
+    method: patch
+    uri: http://smc-ohana-api-test.herokuapp.com/api/locations/1711/address?api_token=SMC-Connect-Admin-Test&city=fairfax&new&state=va&street=bozo&zip=12345
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - SMC-Connect-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 19:28:00 GMT
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.40
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.40
+      X-Request-Id:
+      - 6a774cb8-d119-4352-9ee1-3be7515a8ca1
+      X-Runtime:
+      - '0.056756'
+      Content-Length:
+      - '151'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":1435,"location_id":1711,"street":"bozo","city":"fairfax","state":"va","zip":"12345","created_at":"2014-05-24T14:06:56.940-07:00","updated_at":"2014-05-24T14:06:56.940-07:00"}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 19:28:00 GMT
+- request:
+    method: put
+    uri: http://smc-ohana-api-test.herokuapp.com/api/locations/1711?accessibility%5B0%5D=restroom&admin_emails&api_token=SMC-Connect-Admin-Test&description=This%20is%20a%20description&emails&hours=Monday-Friday%2010am-5pm&kind=test&name=Admin%20Test%20Location&short_desc=This%20is%20a%20short%20description&transportation=SAMTRANS%20stops%20within%201/2%20mile.&urls%5B0%5D=http://codeforamerica.org
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - SMC-Connect-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 19:28:00 GMT
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.40
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.40
+      X-Request-Id:
+      - 33e64e4a-7de4-418a-8baa-5c0aee6588ef
+      X-Runtime:
+      - '0.145954'
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":1711,"accessibility":["Disabled Restroom"],"address":{"id":1435,"street":"bozo","city":"fairfax","state":"va","zip":"12345"},"contacts":[{"id":2051,"name":"Moncef
+        Belyamani-Belyamani","title":"Director of Development and Operations","phone":"703-555-1212","email":"moncefbelyamani@samaritanhousesanmateo.org","fax":"703-555-1234"}],"coordinates":[-73.9395687,42.8142432],"description":"This
+        is a description","faxes":[{"id":1152,"number":"7035551212","department":"CalFresh"}],"hours":"Monday-Friday
+        10am-5pm","kind":"Test","name":"Admin Test Location","phones":[{"id":2527,"department":"CalFresh","extension":"x1223","number":"7035551212","vanity_number":"703555-ABCD"}],"short_desc":"This
+        is a short description","slug":"admin-test-location","slugs":["admin-test-location","south-san-francisco-juvenile-sexual-responsibility-program-bozo"],"transportation":"SAMTRANS
+        stops within 1/2 mile.","updated_at":"2014-05-29T12:28:00.669-07:00","urls":["http://codeforamerica.org"],"url":"http://smc-ohana-api-test.herokuapp.com/api/locations/1711","services":[{"id":1693,"description":"This
+        is a description","service_areas":["San Mateo County"],"updated_at":"2014-05-29T12:27:53.418-07:00"}],"organization":{"id":1366,"name":"Health
+        Insurance Counseling and Advocacy Program of San Mateo County (HICAP)","slug":"health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-412e63c6-6f79-433d-b406-1de3c13152b6","slugs":["health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-412e63c6-6f79-433d-b406-1de3c13152b6","admin-test-org","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-ce53a0dd-c37b-4d66-9d0c-3b6c2c78e648","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-3470c9d8-3174-4de0-9cc2-eecffa0e59ed","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-6eeee4c0-9591-4a53-bcde-3fca1ac96366","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-28032884-4d45-4ec0-a6d0-b6598b061e4e","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-1b1fcd3a-405c-4ec2-80bf-fcbad734b409","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-24655bf6-de3e-4c4a-8324-6df9583fb297","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-2b525096-47bb-4bfd-b66b-25aca8b0e50f","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-0f11ef7b-206f-4c88-8220-35b70904057e","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-21aff945-f0cd-4822-a310-b4d488e2cd4f","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-bf3681c6-2413-4af2-962e-54eda576a822","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-ebd9be23-84fa-4fb2-b64c-d8d4204572bd","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-e4138e1b-67f8-4d9d-95a6-1fa862e049aa","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-d04de352-e4d7-45b4-b61b-cf5f76724ee3","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-bd84ed9e-5453-475e-9e24-a9982f62d167","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-8d871ab7-ac9d-4ea1-9496-5bd1ccb80e5b","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-627c93a8-68c7-4743-8746-bc993ddf4eb1","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-dd044e00-446b-4f95-910f-462034a8e2c3","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-f3f5d60f-637f-45f2-9ee0-b02a807d319f","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-1aaf68ce-9bc3-4363-ac26-a4bb4e6dd528"],"_slugs":["health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-412e63c6-6f79-433d-b406-1de3c13152b6"],"url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/1366","locations_url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/1366/locations"}}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 19:28:00 GMT
+- request:
+    method: patch
+    uri: http://smc-ohana-api-test.herokuapp.com/api/locations/1711/contacts/2051?api_token=SMC-Connect-Admin-Test&email=moncefbelyamani@samaritanhousesanmateo.org&extension=&fax=703-555-1234&name=Moncef%20Belyamani-Belyamani&phone=703-555-1212&title=Director%20of%20Development%20and%20Operations
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - SMC-Connect-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 19:28:00 GMT
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.40
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.40
+      X-Request-Id:
+      - 0bf76621-21b5-4f32-bd5c-47bff42dcd1e
+      X-Runtime:
+      - '0.061241'
+      Content-Length:
+      - '175'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":2051,"name":"Moncef Belyamani-Belyamani","title":"Director of
+        Development and Operations","phone":"703-555-1212","email":"moncefbelyamani@samaritanhousesanmateo.org","fax":"703-555-1234"}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 19:28:00 GMT
+- request:
+    method: patch
+    uri: http://smc-ohana-api-test.herokuapp.com/api/locations/1711/faxes/1152?api_token=SMC-Connect-Admin-Test&department=CalFresh&number=7035551212
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - SMC-Connect-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 19:28:01 GMT
+      Etag:
+      - '"67599aa0373f1d23e4292c1a92619794"'
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.40
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.40
+      X-Request-Id:
+      - d70bf960-1dad-44d0-a8a0-3527ae38c725
+      X-Runtime:
+      - '0.062243'
+      Content-Length:
+      - '57'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":1152,"number":"7035551212","department":"CalFresh"}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 19:28:00 GMT
+- request:
+    method: patch
+    uri: http://smc-ohana-api-test.herokuapp.com/api/locations/1711/phones/2527?api_token=SMC-Connect-Admin-Test&department=CalFresh&extension=x1223&hours=&number=7035551212&vanity_number=703555-ABCD
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - SMC-Connect-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 19:28:01 GMT
+      Etag:
+      - '"a912e9cd49993e0e13051ea9623907a9"'
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.40
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.40
+      X-Request-Id:
+      - 95ec38d4-216f-47be-9528-b5810f5b527a
+      X-Runtime:
+      - '0.057489'
+      Content-Length:
+      - '107'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":2527,"department":"CalFresh","extension":"x1223","number":"7035551212","vanity_number":"703555-ABCD"}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 19:28:00 GMT
+- request:
+    method: put
+    uri: http://smc-ohana-api-test.herokuapp.com/api/services/1693?api_token=SMC-Connect-Admin-Test&audience=&eligibility=&fees=&how_to_apply=&keywords&service_areas%5B0%5D=San%20Mateo%20County&wait=
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - SMC-Connect-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 19:28:01 GMT
+      Etag:
+      - '"866f0fba0a7a449875d0caff08606447"'
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.40
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.40
+      X-Request-Id:
+      - fe986d56-2cb0-46bf-b6bc-f45d177ac729
+      X-Runtime:
+      - '0.073061'
+      Content-Length:
+      - '131'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":1693,"description":"This is a description","service_areas":["San
+        Mateo County"],"updated_at":"2014-05-29T12:28:01.268-07:00"}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 19:28:00 GMT
+- request:
+    method: put
+    uri: http://smc-ohana-api-test.herokuapp.com/api/services/1693/categories?api_token=SMC-Connect-Admin-Test&category_slugs
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - SMC-Connect-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 19:28:01 GMT
+      Etag:
+      - '"b07e22b2351545308a852af79e7a96cf"'
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.40
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.40
+      X-Request-Id:
+      - 89257f4c-0ea8-4670-9a57-2a2df08ef27b
+      X-Runtime:
+      - '0.072535'
+      Content-Length:
+      - '131'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":1693,"description":"This is a description","service_areas":["San
+        Mateo County"],"updated_at":"2014-05-29T12:28:01.409-07:00"}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 19:28:01 GMT
+- request:
+    method: get
+    uri: http://smc-ohana-api-test.herokuapp.com/api/locations/1711?api_token=SMC-Connect-Admin-Test
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - SMC-Connect-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 19:28:01 GMT
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.40
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.40
+      X-Request-Id:
+      - 2961e2cd-f090-4b4e-8db0-3f7ceafb3acb
+      X-Runtime:
+      - '0.135485'
+      Content-Length:
+      - '1343'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":1711,"accessibility":["Disabled Restroom"],"address":{"id":1435,"street":"bozo","city":"fairfax","state":"va","zip":"12345"},"contacts":[{"id":2051,"name":"Moncef
+        Belyamani-Belyamani","title":"Director of Development and Operations","phone":"703-555-1212","email":"moncefbelyamani@samaritanhousesanmateo.org","fax":"703-555-1234"}],"coordinates":[-73.9395687,42.8142432],"description":"This
+        is a description","faxes":[{"id":1152,"number":"7035551212","department":"CalFresh"}],"hours":"Monday-Friday
+        10am-5pm","kind":"Test","name":"Admin Test Location","phones":[{"id":2527,"department":"CalFresh","extension":"x1223","number":"7035551212","vanity_number":"703555-ABCD"}],"short_desc":"This
+        is a short description","slug":"admin-test-location","slugs":["admin-test-location","south-san-francisco-juvenile-sexual-responsibility-program-bozo"],"transportation":"SAMTRANS
+        stops within 1/2 mile.","updated_at":"2014-05-29T12:28:01.423-07:00","urls":["http://codeforamerica.org"],"url":"http://smc-ohana-api-test.herokuapp.com/api/locations/1711","services":[{"id":1693,"description":"This
+        is a description","service_areas":["San Mateo County"],"updated_at":"2014-05-29T12:28:01.409-07:00"}],"organization":{"id":1366,"name":"Health
+        Insurance Counseling and Advocacy Program of San Mateo County (HICAP)","slug":"health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-412e63c6-6f79-433d-b406-1de3c13152b6","slugs":["health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-412e63c6-6f79-433d-b406-1de3c13152b6","admin-test-org","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-ce53a0dd-c37b-4d66-9d0c-3b6c2c78e648","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-3470c9d8-3174-4de0-9cc2-eecffa0e59ed","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-6eeee4c0-9591-4a53-bcde-3fca1ac96366","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-28032884-4d45-4ec0-a6d0-b6598b061e4e","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-1b1fcd3a-405c-4ec2-80bf-fcbad734b409","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-24655bf6-de3e-4c4a-8324-6df9583fb297","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-2b525096-47bb-4bfd-b66b-25aca8b0e50f","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-0f11ef7b-206f-4c88-8220-35b70904057e","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-21aff945-f0cd-4822-a310-b4d488e2cd4f","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-bf3681c6-2413-4af2-962e-54eda576a822","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-ebd9be23-84fa-4fb2-b64c-d8d4204572bd","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-e4138e1b-67f8-4d9d-95a6-1fa862e049aa","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-d04de352-e4d7-45b4-b61b-cf5f76724ee3","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-bd84ed9e-5453-475e-9e24-a9982f62d167","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-8d871ab7-ac9d-4ea1-9496-5bd1ccb80e5b","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-627c93a8-68c7-4743-8746-bc993ddf4eb1","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-dd044e00-446b-4f95-910f-462034a8e2c3","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-f3f5d60f-637f-45f2-9ee0-b02a807d319f","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-1aaf68ce-9bc3-4363-ac26-a4bb4e6dd528"],"_slugs":["health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-412e63c6-6f79-433d-b406-1de3c13152b6"],"url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/1366","locations_url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/1366/locations"}}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 19:28:01 GMT
+- request:
+    method: get
+    uri: http://smc-ohana-api-test.herokuapp.com/api/locations/admin-test-location?api_token=SMC-Connect-Admin-Test
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - SMC-Connect-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 19:28:02 GMT
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.40
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.40
+      X-Request-Id:
+      - ac0eb7e5-c52e-447e-8b65-75b98def84de
+      X-Runtime:
+      - '0.078813'
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":1711,"accessibility":["Disabled Restroom"],"address":{"id":1435,"street":"bozo","city":"fairfax","state":"va","zip":"12345"},"contacts":[{"id":2051,"name":"Moncef
+        Belyamani-Belyamani","title":"Director of Development and Operations","phone":"703-555-1212","email":"moncefbelyamani@samaritanhousesanmateo.org","fax":"703-555-1234"}],"coordinates":[-73.9395687,42.8142432],"description":"This
+        is a description","faxes":[{"id":1152,"number":"7035551212","department":"CalFresh"}],"hours":"Monday-Friday
+        10am-5pm","kind":"Test","name":"Admin Test Location","phones":[{"id":2527,"department":"CalFresh","extension":"x1223","number":"7035551212","vanity_number":"703555-ABCD"}],"short_desc":"This
+        is a short description","slug":"admin-test-location","slugs":["admin-test-location","south-san-francisco-juvenile-sexual-responsibility-program-bozo"],"transportation":"SAMTRANS
+        stops within 1/2 mile.","updated_at":"2014-05-29T12:28:01.423-07:00","urls":["http://codeforamerica.org"],"url":"http://smc-ohana-api-test.herokuapp.com/api/locations/1711","services":[{"id":1693,"description":"This
+        is a description","service_areas":["San Mateo County"],"updated_at":"2014-05-29T12:28:01.409-07:00"}],"organization":{"id":1366,"name":"Health
+        Insurance Counseling and Advocacy Program of San Mateo County (HICAP)","slug":"health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-412e63c6-6f79-433d-b406-1de3c13152b6","slugs":["health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-412e63c6-6f79-433d-b406-1de3c13152b6","admin-test-org","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-ce53a0dd-c37b-4d66-9d0c-3b6c2c78e648","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-3470c9d8-3174-4de0-9cc2-eecffa0e59ed","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-6eeee4c0-9591-4a53-bcde-3fca1ac96366","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-28032884-4d45-4ec0-a6d0-b6598b061e4e","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-1b1fcd3a-405c-4ec2-80bf-fcbad734b409","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-24655bf6-de3e-4c4a-8324-6df9583fb297","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-2b525096-47bb-4bfd-b66b-25aca8b0e50f","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-0f11ef7b-206f-4c88-8220-35b70904057e","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-21aff945-f0cd-4822-a310-b4d488e2cd4f","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-bf3681c6-2413-4af2-962e-54eda576a822","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-ebd9be23-84fa-4fb2-b64c-d8d4204572bd","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-e4138e1b-67f8-4d9d-95a6-1fa862e049aa","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-d04de352-e4d7-45b4-b61b-cf5f76724ee3","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-bd84ed9e-5453-475e-9e24-a9982f62d167","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-8d871ab7-ac9d-4ea1-9496-5bd1ccb80e5b","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-627c93a8-68c7-4743-8746-bc993ddf4eb1","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-dd044e00-446b-4f95-910f-462034a8e2c3","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-f3f5d60f-637f-45f2-9ee0-b02a807d319f","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-1aaf68ce-9bc3-4363-ac26-a4bb4e6dd528"],"_slugs":["health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-412e63c6-6f79-433d-b406-1de3c13152b6"],"url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/1366","locations_url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/1366/locations"}}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 19:28:01 GMT
+- request:
+    method: put
+    uri: http://smc-ohana-api-test.herokuapp.com/api/organizations/1366?api_token=SMC-Connect-Admin-Test&name=Health%20Insurance%20Counseling%20and%20Advocacy%20Program%20of%20San%20Mateo%20County%20(HICAP)
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - SMC-Connect-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 19:28:02 GMT
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.40
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.40
+      X-Request-Id:
+      - 1f2bf189-7875-4e8d-9ca3-b5989460a9ed
+      X-Runtime:
+      - '0.053815'
+      Content-Length:
+      - '767'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":1366,"name":"Health Insurance Counseling and Advocacy Program
+        of San Mateo County (HICAP)","slug":"health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-412e63c6-6f79-433d-b406-1de3c13152b6","slugs":["health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-412e63c6-6f79-433d-b406-1de3c13152b6","admin-test-org","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-ce53a0dd-c37b-4d66-9d0c-3b6c2c78e648","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-3470c9d8-3174-4de0-9cc2-eecffa0e59ed","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-6eeee4c0-9591-4a53-bcde-3fca1ac96366","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-28032884-4d45-4ec0-a6d0-b6598b061e4e","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-1b1fcd3a-405c-4ec2-80bf-fcbad734b409","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-24655bf6-de3e-4c4a-8324-6df9583fb297","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-2b525096-47bb-4bfd-b66b-25aca8b0e50f","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-0f11ef7b-206f-4c88-8220-35b70904057e","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-21aff945-f0cd-4822-a310-b4d488e2cd4f","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-bf3681c6-2413-4af2-962e-54eda576a822","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-ebd9be23-84fa-4fb2-b64c-d8d4204572bd","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-e4138e1b-67f8-4d9d-95a6-1fa862e049aa","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-d04de352-e4d7-45b4-b61b-cf5f76724ee3","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-bd84ed9e-5453-475e-9e24-a9982f62d167","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-8d871ab7-ac9d-4ea1-9496-5bd1ccb80e5b","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-627c93a8-68c7-4743-8746-bc993ddf4eb1","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-dd044e00-446b-4f95-910f-462034a8e2c3","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-f3f5d60f-637f-45f2-9ee0-b02a807d319f","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-1aaf68ce-9bc3-4363-ac26-a4bb4e6dd528"],"_slugs":["health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-412e63c6-6f79-433d-b406-1de3c13152b6"],"url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/1366","locations_url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/1366/locations"}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 19:28:02 GMT
+- request:
+    method: patch
+    uri: http://smc-ohana-api-test.herokuapp.com/api/locations/1711/address?api_token=SMC-Connect-Admin-Test&city=fairfax&new&state=va&street=bozo&zip=12345
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - SMC-Connect-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 19:28:02 GMT
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.40
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.40
+      X-Request-Id:
+      - fcfb7324-ffdb-4acf-8e9f-ab2f6e3e018e
+      X-Runtime:
+      - '0.056860'
+      Content-Length:
+      - '151'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":1435,"location_id":1711,"street":"bozo","city":"fairfax","state":"va","zip":"12345","created_at":"2014-05-24T14:06:56.940-07:00","updated_at":"2014-05-24T14:06:56.940-07:00"}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 19:28:02 GMT
+- request:
+    method: put
+    uri: http://smc-ohana-api-test.herokuapp.com/api/locations/1711?accessibility%5B0%5D=restroom&admin_emails&api_token=SMC-Connect-Admin-Test&description=This%20is%20a%20description&emails%5B0%5D=eml@example.org&hours=Monday-Friday%2010am-5pm&kind=test&name=Admin%20Test%20Location&short_desc=This%20is%20a%20short%20description&transportation=SAMTRANS%20stops%20within%201/2%20mile.&urls%5B0%5D=http://codeforamerica.org
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - SMC-Connect-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 19:28:02 GMT
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.40
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.40
+      X-Request-Id:
+      - b61c0b6b-d00e-448b-8059-06f70ae452a1
+      X-Runtime:
+      - '0.102304'
+      Content-Length:
+      - '1365'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":1711,"accessibility":["Disabled Restroom"],"address":{"id":1435,"street":"bozo","city":"fairfax","state":"va","zip":"12345"},"contacts":[{"id":2051,"name":"Moncef
+        Belyamani-Belyamani","title":"Director of Development and Operations","phone":"703-555-1212","email":"moncefbelyamani@samaritanhousesanmateo.org","fax":"703-555-1234"}],"coordinates":[-73.9395687,42.8142432],"description":"This
+        is a description","emails":["eml@example.org"],"faxes":[{"id":1152,"number":"7035551212","department":"CalFresh"}],"hours":"Monday-Friday
+        10am-5pm","kind":"Test","name":"Admin Test Location","phones":[{"id":2527,"department":"CalFresh","extension":"x1223","number":"7035551212","vanity_number":"703555-ABCD"}],"short_desc":"This
+        is a short description","slug":"admin-test-location","slugs":["admin-test-location","south-san-francisco-juvenile-sexual-responsibility-program-bozo"],"transportation":"SAMTRANS
+        stops within 1/2 mile.","updated_at":"2014-05-29T12:28:02.772-07:00","urls":["http://codeforamerica.org"],"url":"http://smc-ohana-api-test.herokuapp.com/api/locations/1711","services":[{"id":1693,"description":"This
+        is a description","service_areas":["San Mateo County"],"updated_at":"2014-05-29T12:28:01.409-07:00"}],"organization":{"id":1366,"name":"Health
+        Insurance Counseling and Advocacy Program of San Mateo County (HICAP)","slug":"health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-412e63c6-6f79-433d-b406-1de3c13152b6","slugs":["health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-412e63c6-6f79-433d-b406-1de3c13152b6","admin-test-org","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-ce53a0dd-c37b-4d66-9d0c-3b6c2c78e648","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-3470c9d8-3174-4de0-9cc2-eecffa0e59ed","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-6eeee4c0-9591-4a53-bcde-3fca1ac96366","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-28032884-4d45-4ec0-a6d0-b6598b061e4e","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-1b1fcd3a-405c-4ec2-80bf-fcbad734b409","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-24655bf6-de3e-4c4a-8324-6df9583fb297","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-2b525096-47bb-4bfd-b66b-25aca8b0e50f","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-0f11ef7b-206f-4c88-8220-35b70904057e","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-21aff945-f0cd-4822-a310-b4d488e2cd4f","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-bf3681c6-2413-4af2-962e-54eda576a822","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-ebd9be23-84fa-4fb2-b64c-d8d4204572bd","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-e4138e1b-67f8-4d9d-95a6-1fa862e049aa","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-d04de352-e4d7-45b4-b61b-cf5f76724ee3","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-bd84ed9e-5453-475e-9e24-a9982f62d167","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-8d871ab7-ac9d-4ea1-9496-5bd1ccb80e5b","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-627c93a8-68c7-4743-8746-bc993ddf4eb1","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-dd044e00-446b-4f95-910f-462034a8e2c3","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-f3f5d60f-637f-45f2-9ee0-b02a807d319f","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-1aaf68ce-9bc3-4363-ac26-a4bb4e6dd528"],"_slugs":["health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-412e63c6-6f79-433d-b406-1de3c13152b6"],"url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/1366","locations_url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/1366/locations"}}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 19:28:02 GMT
+- request:
+    method: patch
+    uri: http://smc-ohana-api-test.herokuapp.com/api/locations/1711/contacts/2051?api_token=SMC-Connect-Admin-Test&email=moncefbelyamani@samaritanhousesanmateo.org&extension=&fax=703-555-1234&name=Moncef%20Belyamani-Belyamani&phone=703-555-1212&title=Director%20of%20Development%20and%20Operations
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - SMC-Connect-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 19:28:02 GMT
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.40
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.40
+      X-Request-Id:
+      - 5e92a3c4-d665-4329-b17f-de3249692468
+      X-Runtime:
+      - '0.044327'
+      Content-Length:
+      - '175'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":2051,"name":"Moncef Belyamani-Belyamani","title":"Director of
+        Development and Operations","phone":"703-555-1212","email":"moncefbelyamani@samaritanhousesanmateo.org","fax":"703-555-1234"}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 19:28:02 GMT
+- request:
+    method: patch
+    uri: http://smc-ohana-api-test.herokuapp.com/api/locations/1711/faxes/1152?api_token=SMC-Connect-Admin-Test&department=CalFresh&number=7035551212
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - SMC-Connect-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 19:28:03 GMT
+      Etag:
+      - '"67599aa0373f1d23e4292c1a92619794"'
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.40
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.40
+      X-Request-Id:
+      - 1adaad02-1c67-47f4-a08c-bce3da81e8f2
+      X-Runtime:
+      - '0.042575'
+      Content-Length:
+      - '57'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":1152,"number":"7035551212","department":"CalFresh"}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 19:28:02 GMT
+- request:
+    method: patch
+    uri: http://smc-ohana-api-test.herokuapp.com/api/locations/1711/phones/2527?api_token=SMC-Connect-Admin-Test&department=CalFresh&extension=x1223&hours=&number=7035551212&vanity_number=703555-ABCD
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - SMC-Connect-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 19:28:03 GMT
+      Etag:
+      - '"a912e9cd49993e0e13051ea9623907a9"'
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.40
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.40
+      X-Request-Id:
+      - 9db6d2ae-7304-4ae6-9056-d4530d302bde
+      X-Runtime:
+      - '0.049128'
+      Content-Length:
+      - '107'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":2527,"department":"CalFresh","extension":"x1223","number":"7035551212","vanity_number":"703555-ABCD"}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 19:28:02 GMT
+- request:
+    method: put
+    uri: http://smc-ohana-api-test.herokuapp.com/api/services/1693?api_token=SMC-Connect-Admin-Test&audience=&eligibility=&fees=&how_to_apply=&keywords&service_areas%5B0%5D=San%20Mateo%20County&wait=
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - SMC-Connect-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 19:28:03 GMT
+      Etag:
+      - '"528679a927b79146d8009abb3db0e0d3"'
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.40
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.40
+      X-Request-Id:
+      - 8257ea74-415f-40fa-ac9c-8a59ec60f837
+      X-Runtime:
+      - '0.073607'
+      Content-Length:
+      - '131'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":1693,"description":"This is a description","service_areas":["San
+        Mateo County"],"updated_at":"2014-05-29T12:28:03.201-07:00"}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 19:28:02 GMT
+- request:
+    method: put
+    uri: http://smc-ohana-api-test.herokuapp.com/api/services/1693/categories?api_token=SMC-Connect-Admin-Test&category_slugs
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - SMC-Connect-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 19:28:03 GMT
+      Etag:
+      - '"50bfe09dee5553bdeee33f6ea4a0fdbf"'
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.40
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.40
+      X-Request-Id:
+      - a1615129-0d66-4635-8b98-7d293c008613
+      X-Runtime:
+      - '0.114601'
+      Content-Length:
+      - '131'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":1693,"description":"This is a description","service_areas":["San
+        Mateo County"],"updated_at":"2014-05-29T12:28:03.326-07:00"}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 19:28:03 GMT
+- request:
+    method: get
+    uri: http://smc-ohana-api-test.herokuapp.com/api/locations/1711?api_token=SMC-Connect-Admin-Test
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - SMC-Connect-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 19:28:03 GMT
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.40
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.40
+      X-Request-Id:
+      - 98c5011b-92cd-4a10-8b35-35aef27f66e9
+      X-Runtime:
+      - '0.077733'
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":1711,"accessibility":["Disabled Restroom"],"address":{"id":1435,"street":"bozo","city":"fairfax","state":"va","zip":"12345"},"contacts":[{"id":2051,"name":"Moncef
+        Belyamani-Belyamani","title":"Director of Development and Operations","phone":"703-555-1212","email":"moncefbelyamani@samaritanhousesanmateo.org","fax":"703-555-1234"}],"coordinates":[-73.9395687,42.8142432],"description":"This
+        is a description","emails":["eml@example.org"],"faxes":[{"id":1152,"number":"7035551212","department":"CalFresh"}],"hours":"Monday-Friday
+        10am-5pm","kind":"Test","name":"Admin Test Location","phones":[{"id":2527,"department":"CalFresh","extension":"x1223","number":"7035551212","vanity_number":"703555-ABCD"}],"short_desc":"This
+        is a short description","slug":"admin-test-location","slugs":["admin-test-location","south-san-francisco-juvenile-sexual-responsibility-program-bozo"],"transportation":"SAMTRANS
+        stops within 1/2 mile.","updated_at":"2014-05-29T12:28:03.363-07:00","urls":["http://codeforamerica.org"],"url":"http://smc-ohana-api-test.herokuapp.com/api/locations/1711","services":[{"id":1693,"description":"This
+        is a description","service_areas":["San Mateo County"],"updated_at":"2014-05-29T12:28:03.326-07:00"}],"organization":{"id":1366,"name":"Health
+        Insurance Counseling and Advocacy Program of San Mateo County (HICAP)","slug":"health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-412e63c6-6f79-433d-b406-1de3c13152b6","slugs":["health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-412e63c6-6f79-433d-b406-1de3c13152b6","admin-test-org","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-ce53a0dd-c37b-4d66-9d0c-3b6c2c78e648","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-3470c9d8-3174-4de0-9cc2-eecffa0e59ed","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-6eeee4c0-9591-4a53-bcde-3fca1ac96366","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-28032884-4d45-4ec0-a6d0-b6598b061e4e","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-1b1fcd3a-405c-4ec2-80bf-fcbad734b409","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-24655bf6-de3e-4c4a-8324-6df9583fb297","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-2b525096-47bb-4bfd-b66b-25aca8b0e50f","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-0f11ef7b-206f-4c88-8220-35b70904057e","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-21aff945-f0cd-4822-a310-b4d488e2cd4f","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-bf3681c6-2413-4af2-962e-54eda576a822","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-ebd9be23-84fa-4fb2-b64c-d8d4204572bd","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-e4138e1b-67f8-4d9d-95a6-1fa862e049aa","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-d04de352-e4d7-45b4-b61b-cf5f76724ee3","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-bd84ed9e-5453-475e-9e24-a9982f62d167","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-8d871ab7-ac9d-4ea1-9496-5bd1ccb80e5b","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-627c93a8-68c7-4743-8746-bc993ddf4eb1","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-dd044e00-446b-4f95-910f-462034a8e2c3","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-f3f5d60f-637f-45f2-9ee0-b02a807d319f","health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-1aaf68ce-9bc3-4363-ac26-a4bb4e6dd528"],"_slugs":["health-insurance-counseling-and-advocacy-program-of-san-mateo-county-hicap-412e63c6-6f79-433d-b406-1de3c13152b6"],"url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/1366","locations_url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/1366/locations"}}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 19:28:03 GMT
+recorded_with: VCR 2.9.2

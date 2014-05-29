@@ -36,6 +36,8 @@ group :test do
   gem 'mongoid-rspec'
   gem "capybara"
   gem 'poltergeist'
+  gem 'vcr', '>= 2.9.0'
+  gem 'webmock', '>= 1.17.4'
 end
 
 gem "ohanakapa", "~> 1.0"

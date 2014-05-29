@@ -1,0 +1,799 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://smc-ohana-api-test.herokuapp.com/api/locations/location-with-no-phone?api_token=SMC-Connect-Admin-Test
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - SMC-Connect-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 19:29:56 GMT
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.40
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.40
+      X-Request-Id:
+      - e36a61ce-5693-4417-97d1-e6e0d6c9872e
+      X-Runtime:
+      - '0.062921'
+      Content-Length:
+      - '357'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":1712,"description":"no phone","kind":"Test","mail_address":{"id":1688,"attention":"","street":"puma","city":"fairfax","state":"VA","zip":"22031"},"name":"Location
+        with no phone","short_desc":"no phone","slug":"location-with-no-phone","slugs":["location-with-no-phone"],"updated_at":"2014-05-29T12:27:58.534-07:00","url":"http://smc-ohana-api-test.herokuapp.com/api/locations/1712","services":[{"id":1694,"description":"no
+        phone","updated_at":"2014-05-29T12:27:58.525-07:00"}],"organization":{"id":1367,"name":"Testing
+        org","slug":"testing-org","slugs":["testing-org"],"_slugs":["testing-org"],"url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/1367","locations_url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/1367/locations"}}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 19:29:56 GMT
+- request:
+    method: put
+    uri: http://smc-ohana-api-test.herokuapp.com/api/organizations/1367?api_token=SMC-Connect-Admin-Test&name=Testing%20org
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - SMC-Connect-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 19:29:57 GMT
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.40
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.40
+      X-Request-Id:
+      - fda72137-ab71-42f6-8809-06dc87e008ef
+      X-Runtime:
+      - '0.038671'
+      Content-Length:
+      - '156'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":1367,"name":"Testing org","slug":"testing-org","slugs":["testing-org"],"_slugs":["testing-org"],"url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/1367","locations_url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/1367/locations"}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 19:29:57 GMT
+- request:
+    method: patch
+    uri: http://smc-ohana-api-test.herokuapp.com/api/locations/1712/mail_address?api_token=SMC-Connect-Admin-Test&attention=&city=fairfax&state=VA&street=puma&zip=22031
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - SMC-Connect-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 19:29:57 GMT
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.40
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.40
+      X-Request-Id:
+      - f4eda81a-6b63-419e-a9e6-4a8d0c767acc
+      X-Runtime:
+      - '0.045146'
+      Content-Length:
+      - '154'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":1688,"location_id":1712,"attention":"","street":"puma","city":"fairfax","state":"VA","zip":"22031","created_at":"2014-05-24T14:06:56.999-07:00","updated_at":"2014-05-24T14:06:56.999-07:00"}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 19:29:57 GMT
+- request:
+    method: put
+    uri: http://smc-ohana-api-test.herokuapp.com/api/locations/1712?accessibility&admin_emails&api_token=SMC-Connect-Admin-Test&description=no%20phone&emails&hours=&kind=test&name=Location%20with%20no%20phone&short_desc=no%20phone&transportation=&urls
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - SMC-Connect-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 19:29:57 GMT
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.40
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.40
+      X-Request-Id:
+      - b6ee3713-b7f0-40e0-ab83-4755bc23b404
+      X-Runtime:
+      - '0.091390'
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":1712,"description":"no phone","kind":"Test","mail_address":{"id":1688,"attention":"","street":"puma","city":"fairfax","state":"VA","zip":"22031"},"name":"Location
+        with no phone","short_desc":"no phone","slug":"location-with-no-phone","slugs":["location-with-no-phone"],"updated_at":"2014-05-29T12:29:57.714-07:00","url":"http://smc-ohana-api-test.herokuapp.com/api/locations/1712","services":[{"id":1694,"description":"no
+        phone","updated_at":"2014-05-29T12:27:58.525-07:00"}],"organization":{"id":1367,"name":"Testing
+        org","slug":"testing-org","slugs":["testing-org"],"_slugs":["testing-org"],"url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/1367","locations_url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/1367/locations"}}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 19:29:57 GMT
+- request:
+    method: post
+    uri: http://smc-ohana-api-test.herokuapp.com/api/locations/1712/faxes?api_token=SMC-Connect-Admin-Test&department=CalFresh&number=2025551212
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - SMC-Connect-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 19:29:57 GMT
+      Etag:
+      - '"b48e84ba844614cb906bdde6180dd503"'
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.40
+      Status:
+      - 201 Created
+      X-Powered-By:
+      - Phusion Passenger 4.0.40
+      X-Request-Id:
+      - 8a216163-d822-4312-a420-52009be69d68
+      X-Runtime:
+      - '0.054950'
+      Content-Length:
+      - '166'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":1155,"location_id":1712,"number":"2025551212","department":"CalFresh","created_at":"2014-05-29T12:29:57.876-07:00","updated_at":"2014-05-29T12:29:57.876-07:00"}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 19:29:57 GMT
+- request:
+    method: put
+    uri: http://smc-ohana-api-test.herokuapp.com/api/services/1694?api_token=SMC-Connect-Admin-Test&audience=&eligibility=&fees=&how_to_apply=&keywords&wait=
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - SMC-Connect-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 19:29:58 GMT
+      Etag:
+      - '"33d424895cc216a8c444eeeac523751b"'
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.40
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.40
+      X-Request-Id:
+      - 3289d102-6e96-4b86-a17d-34fb81693849
+      X-Runtime:
+      - '0.044895'
+      Content-Length:
+      - '81'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":1694,"description":"no phone","updated_at":"2014-05-29T12:29:57.993-07:00"}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 19:29:57 GMT
+- request:
+    method: put
+    uri: http://smc-ohana-api-test.herokuapp.com/api/services/1694/categories?api_token=SMC-Connect-Admin-Test&category_slugs
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - SMC-Connect-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 19:29:58 GMT
+      Etag:
+      - '"b846b8085cd4c5cf87a8dd6e07f2db02"'
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.40
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.40
+      X-Request-Id:
+      - 182c054b-a303-4b17-afcf-da179133fd48
+      X-Runtime:
+      - '0.074149'
+      Content-Length:
+      - '81'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":1694,"description":"no phone","updated_at":"2014-05-29T12:29:58.102-07:00"}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 19:29:57 GMT
+- request:
+    method: get
+    uri: http://smc-ohana-api-test.herokuapp.com/api/locations/1712?api_token=SMC-Connect-Admin-Test
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - SMC-Connect-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 19:29:58 GMT
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.40
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.40
+      X-Request-Id:
+      - b7912969-925d-4b4e-bc72-c1ba25f94df3
+      X-Runtime:
+      - '0.199813'
+      Content-Length:
+      - '398'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":1712,"description":"no phone","faxes":[{"id":1155,"number":"2025551212","department":"CalFresh"}],"kind":"Test","mail_address":{"id":1688,"attention":"","street":"puma","city":"fairfax","state":"VA","zip":"22031"},"name":"Location
+        with no phone","short_desc":"no phone","slug":"location-with-no-phone","slugs":["location-with-no-phone"],"updated_at":"2014-05-29T12:29:58.110-07:00","url":"http://smc-ohana-api-test.herokuapp.com/api/locations/1712","services":[{"id":1694,"description":"no
+        phone","updated_at":"2014-05-29T12:29:58.102-07:00"}],"organization":{"id":1367,"name":"Testing
+        org","slug":"testing-org","slugs":["testing-org"],"_slugs":["testing-org"],"url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/1367","locations_url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/1367/locations"}}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 19:29:58 GMT
+- request:
+    method: get
+    uri: http://smc-ohana-api-test.herokuapp.com/api/locations/location-with-no-phone?api_token=SMC-Connect-Admin-Test
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - SMC-Connect-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 19:29:59 GMT
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.40
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.40
+      X-Request-Id:
+      - fcc9a9ab-0e05-4355-b4b4-88f28aca4492
+      X-Runtime:
+      - '0.408839'
+      Content-Length:
+      - '398'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":1712,"description":"no phone","faxes":[{"id":1155,"number":"2025551212","department":"CalFresh"}],"kind":"Test","mail_address":{"id":1688,"attention":"","street":"puma","city":"fairfax","state":"VA","zip":"22031"},"name":"Location
+        with no phone","short_desc":"no phone","slug":"location-with-no-phone","slugs":["location-with-no-phone"],"updated_at":"2014-05-29T12:29:58.110-07:00","url":"http://smc-ohana-api-test.herokuapp.com/api/locations/1712","services":[{"id":1694,"description":"no
+        phone","updated_at":"2014-05-29T12:29:58.102-07:00"}],"organization":{"id":1367,"name":"Testing
+        org","slug":"testing-org","slugs":["testing-org"],"_slugs":["testing-org"],"url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/1367","locations_url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/1367/locations"}}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 19:29:58 GMT
+- request:
+    method: put
+    uri: http://smc-ohana-api-test.herokuapp.com/api/organizations/1367?api_token=SMC-Connect-Admin-Test&name=Testing%20org
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - SMC-Connect-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 19:30:00 GMT
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.40
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.40
+      X-Request-Id:
+      - 6ca7fd0b-398e-420a-80e9-9f7a480522ee
+      X-Runtime:
+      - '0.055953'
+      Content-Length:
+      - '162'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":1367,"name":"Testing org","slug":"testing-org","slugs":["testing-org"],"_slugs":["testing-org"],"url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/1367","locations_url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/1367/locations"}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 19:29:59 GMT
+- request:
+    method: patch
+    uri: http://smc-ohana-api-test.herokuapp.com/api/locations/1712/mail_address?api_token=SMC-Connect-Admin-Test&attention=&city=fairfax&state=VA&street=puma&zip=22031
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - SMC-Connect-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 19:30:00 GMT
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.40
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.40
+      X-Request-Id:
+      - d34f371f-e2ea-46e0-92ce-494f8c053eb9
+      X-Runtime:
+      - '0.073912'
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":1688,"location_id":1712,"attention":"","street":"puma","city":"fairfax","state":"VA","zip":"22031","created_at":"2014-05-24T14:06:56.999-07:00","updated_at":"2014-05-24T14:06:56.999-07:00"}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 19:29:59 GMT
+- request:
+    method: put
+    uri: http://smc-ohana-api-test.herokuapp.com/api/locations/1712?accessibility&admin_emails&api_token=SMC-Connect-Admin-Test&description=no%20phone&emails&hours=&kind=test&name=Location%20with%20no%20phone&short_desc=no%20phone&transportation=&urls
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - SMC-Connect-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 19:30:00 GMT
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.40
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.40
+      X-Request-Id:
+      - e0ee09e7-f104-4acf-9493-acf593405a07
+      X-Runtime:
+      - '0.121223'
+      Content-Length:
+      - '408'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":1712,"description":"no phone","faxes":[{"id":1155,"number":"2025551212","department":"CalFresh"}],"kind":"Test","mail_address":{"id":1688,"attention":"","street":"puma","city":"fairfax","state":"VA","zip":"22031"},"name":"Location
+        with no phone","short_desc":"no phone","slug":"location-with-no-phone","slugs":["location-with-no-phone"],"updated_at":"2014-05-29T12:30:00.392-07:00","url":"http://smc-ohana-api-test.herokuapp.com/api/locations/1712","services":[{"id":1694,"description":"no
+        phone","updated_at":"2014-05-29T12:29:58.102-07:00"}],"organization":{"id":1367,"name":"Testing
+        org","slug":"testing-org","slugs":["testing-org"],"_slugs":["testing-org"],"url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/1367","locations_url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/1367/locations"}}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 19:30:00 GMT
+- request:
+    method: delete
+    uri: http://smc-ohana-api-test.herokuapp.com/api/locations/1712/faxes/1155?api_token=SMC-Connect-Admin-Test
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - SMC-Connect-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 19:30:00 GMT
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.40
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.40
+      X-Request-Id:
+      - 00221f2c-9fae-4fc8-8979-e2272a9b7ab2
+      X-Runtime:
+      - '0.046820'
+      Content-Length:
+      - '138'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":1155,"location_id":1712,"number":"2025551212","department":"CalFresh","created_at":"2014-05-29T12:29:57.876-07:00","updated_at":"2014-05-29T12:29:57.876-07:00"}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 19:30:00 GMT
+- request:
+    method: put
+    uri: http://smc-ohana-api-test.herokuapp.com/api/services/1694?api_token=SMC-Connect-Admin-Test&audience=&eligibility=&fees=&how_to_apply=&keywords&wait=
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - SMC-Connect-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 19:30:00 GMT
+      Etag:
+      - '"72de71b8ff7eb045c5b6a12a1bc877fa"'
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.40
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.40
+      X-Request-Id:
+      - f67f9e4b-02ac-48c1-b988-e87c126f22b6
+      X-Runtime:
+      - '0.138018'
+      Content-Length:
+      - '81'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":1694,"description":"no phone","updated_at":"2014-05-29T12:30:00.739-07:00"}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 19:30:00 GMT
+- request:
+    method: put
+    uri: http://smc-ohana-api-test.herokuapp.com/api/services/1694/categories?api_token=SMC-Connect-Admin-Test&category_slugs
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - SMC-Connect-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 19:30:01 GMT
+      Etag:
+      - '"c644ba702b2a8984d74c9612131a001b"'
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.40
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.40
+      X-Request-Id:
+      - dcc78b0d-4380-412c-a4d0-9b0cd7f6a92e
+      X-Runtime:
+      - '0.189975'
+      Content-Length:
+      - '81'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":1694,"description":"no phone","updated_at":"2014-05-29T12:30:01.089-07:00"}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 19:30:00 GMT
+- request:
+    method: get
+    uri: http://smc-ohana-api-test.herokuapp.com/api/locations/1712?api_token=SMC-Connect-Admin-Test
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - SMC-Connect-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 19:30:01 GMT
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.40
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.40
+      X-Request-Id:
+      - f14b4bd4-0826-48e0-babc-c33bfe95065d
+      X-Runtime:
+      - '0.246347'
+      Content-Length:
+      - '363'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":1712,"description":"no phone","kind":"Test","mail_address":{"id":1688,"attention":"","street":"puma","city":"fairfax","state":"VA","zip":"22031"},"name":"Location
+        with no phone","short_desc":"no phone","slug":"location-with-no-phone","slugs":["location-with-no-phone"],"updated_at":"2014-05-29T12:30:01.124-07:00","url":"http://smc-ohana-api-test.herokuapp.com/api/locations/1712","services":[{"id":1694,"description":"no
+        phone","updated_at":"2014-05-29T12:30:01.089-07:00"}],"organization":{"id":1367,"name":"Testing
+        org","slug":"testing-org","slugs":["testing-org"],"_slugs":["testing-org"],"url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/1367","locations_url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/1367/locations"}}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 19:30:01 GMT
+- request:
+    method: get
+    uri: http://smc-ohana-api-test.herokuapp.com/api/locations/location-with-no-phone?api_token=SMC-Connect-Admin-Test
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - SMC-Connect-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 19:30:02 GMT
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.40
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.40
+      X-Request-Id:
+      - b1e8c14a-3ed4-4fbb-a5ac-f57c1ba72c4b
+      X-Runtime:
+      - '0.064090'
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":1712,"description":"no phone","kind":"Test","mail_address":{"id":1688,"attention":"","street":"puma","city":"fairfax","state":"VA","zip":"22031"},"name":"Location
+        with no phone","short_desc":"no phone","slug":"location-with-no-phone","slugs":["location-with-no-phone"],"updated_at":"2014-05-29T12:30:01.124-07:00","url":"http://smc-ohana-api-test.herokuapp.com/api/locations/1712","services":[{"id":1694,"description":"no
+        phone","updated_at":"2014-05-29T12:30:01.089-07:00"}],"organization":{"id":1367,"name":"Testing
+        org","slug":"testing-org","slugs":["testing-org"],"_slugs":["testing-org"],"url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/1367","locations_url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/1367/locations"}}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 19:30:01 GMT
+recorded_with: VCR 2.9.2
