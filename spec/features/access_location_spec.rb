@@ -36,7 +36,7 @@ feature "Accessing a specific location", :vcr do
     set_user_as_admin(new_admin.email, "Page Mill Branch")
     sign_in(new_admin.email, new_admin.password)
     visit("/page-mill-branch")
-    expect(page).to have_content "Sorry, you don't have access to that page"
+    expect(page).to_not have_content "Sorry, you don't have access to that page"
     click_link "Sign out"
     sign_in(@admin.email, @admin.password)
     visit("/page-mill-branch")

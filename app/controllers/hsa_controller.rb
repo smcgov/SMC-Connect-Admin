@@ -220,8 +220,9 @@ class HsaController < ApplicationController
   end
 
   def user_allowed_access_to_location?(location)
+    return true if admins_match_user_email?(location)
     if current_user_has_generic_email?
-      emails_match_user_email?(location) || admins_match_user_email?(location)
+      emails_match_user_email?(location)
     else
       emails_match_domain?(location) || urls_match_domain?(location)
     end
